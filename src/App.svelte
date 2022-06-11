@@ -12,18 +12,21 @@
 		<option value="GoT">Game Of Thrones</option>
 		<option value="SW">Star Wars</option>
 	</select>
+	<h2 id="ID">ID:</h2>
 	</div>
 	<div class="display-wrapper">
 	<div class="iamge">
 		</div>
 	<div class="display">
 	<div>
-	<h2>ID:</h2>
+	
 	<h2>Full Name:</h2>
 	<h2>Family:</h2>
-	<button>Generate Quote</button>
+	<h2>Title:</h2>
+	<button>Generate Quote</button><div class="text"></div><textarea cols="30" rows="10" value="Hello World" readonly></textarea></div>
 </div>
 </div>
+
 </main>
 <style>
 	main{
@@ -32,6 +35,12 @@
 	legend{
 		font-size: 2rem;
 		margin-bottom: 1rem;
+	}
+	.text{
+		display:flex;
+	}
+	#ID{
+		display: inline;
 	}
 	.char{
 		font-size: 1.5rem;
