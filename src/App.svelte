@@ -1,6 +1,10 @@
 <script>
-	import Khal from './Khal.svelte';
-	import Images from './Images.svelte';
+	import Khal from './Characters/Khal.svelte';
+		import ImagesK from './CharacterImages/ImagesK.svelte';
+	import Yoda from './Characters/Yoda.svelte';
+		import ImagesY from './CharacterImages/ImagesY.svelte';
+	import OnePunch from './Characters/OnePunch.svelte';
+		import ImagesO from './CharacterImages/ImagesO.svelte';
 	// let quote = "Nothing for now";
 	// let Khaleesi= {
 	// ID:1,
@@ -11,36 +15,37 @@
 	// family:'House Targaryen',
 	// image:'/build/images/khal.jpg'};
 		let searchq = '';
-		let Khalessi = 'Khaleesi';
 </script>
 <main>
 	<legend>Search For Character</legend>
 	<div class="char">
 	<label for="character">Character: </label>
 	<input bind:value={searchq} id="character" type="text" placeholder="start typing...">
-	<label for="series">Series: </label>
-	<select name="series" id="series">
-		<option value="all">All</option>
-		<option value="LoR">Lord Of the Rings</option>
-		<option value="GoT">Game Of Thrones</option>
-		<option value="SW">Star Wars</option>
-	</select>
 	<h2 id="ID">ID:</h2>
 	</div>
 	<div class="display-wrapper">
 	<div class="iamge">
-		{#if searchq === 'Khaleesi'}
-		<Images/>
+		{#if searchq === 'Khaleesi' || searchq === 'Daenerys' || searchq === 'Daenerys Targaryen'}
+		<ImagesK/>
+		{:else if searchq === 'Yoda' || searchq === 'Minch' || searchq === 'Minch Yoda'}
+		<ImagesY/>
+		{:else if searchq === 'One Punch Man' || searchq === 'Saitama' || searchq === 'Caped Baldy'}
+		<ImagesO/>
 		{/if}
 		</div>
 	<div class="display">
 	<div>
-		{#if searchq === 'Khaleesi' || searchq === 'Sad'}
+		{#if searchq === 'Khaleesi' || searchq === 'Daenerys' || searchq === 'Daenerys Targaryen'}
 		<Khal/>
+		{:else if searchq === 'Yoda' || searchq === 'Minch' || searchq === 'Minch Yoda'}
+		<Yoda/>
+		{:else if searchq === 'One Punch Man' || searchq === 'Saitama' || searchq === 'Caped Baldy'}
+		<OnePunch/>
 		{:else}
 		<h2 id="name">Full Name:</h2>
+		<h2 id="title">Title: </h2>
     	<h2 id="family">Family: </h2>
-    	<h2 id="title">Title: </h2>
+		<h2 id="gender">Gender: </h2>
 		{/if}
 	<button class="butt">Generate Quote</button><div class="text"></div><textarea cols="30" rows="5" value="" readonly></textarea></div>
 </div>
