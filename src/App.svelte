@@ -49,39 +49,67 @@
 	import Melisandre from './Characters/GoT/Melisandre.svelte'
 		import ImagesMel from './CharacterImages/GoT/ImagesMel.svelte'
 	import Jeor from './Characters/GoT/Jeor.svelte'
+		import ImagesJe from './CharacterImages/GoT/ImagesJe.svelte'
 	import Bronn from './Characters/GoT/Bronn.svelte'
+		import ImagesBro from './CharacterImages/GoT/ImagesBro.svelte'
 	import Theon from './Characters/GoT/Theon.svelte'
+		import ImagesTh from './CharacterImages/GoT/ImagesTh.svelte'
 	import Varys from './Characters/GoT/Varys.svelte'
+		import ImagesVa from './CharacterImages/GoT/ImagesVa.svelte'
 	import Shae from './Characters/GoT/Shae.svelte'
+		import ImagesSh from './CharacterImages/GoT/ImagesSh.svelte'
 	import Pycelle from './Characters/GoT/Pycelle.svelte'
+		import ImagesPy from './CharacterImages/GoT/ImagesPy.svelte'
 	import Margaery from './Characters/GoT/Margaery.svelte'
+		import ImagesMar from './CharacterImages/GoT/Imagesmar.svelte'
 	import Tywin from './Characters/GoT/Tywin.svelte'
+		import ImagesTy from './CharacterImages/GoT/ImagesTy.svelte'
 	import Talisa from './Characters/GoT/Talisa.svelte'
+		import ImagesTa from './CharacterImages/GoT/ImagesTa.svelte'
 	import Ygritte from './Characters/GoT/Ygritte.svelte'
+		import ImagesYg from './CharacterImages/GoT/ImagesYg.svelte'
 	import Gendry from './Characters/GoT/Gendry.svelte'
+		import ImagesGe from './CharacterImages/GoT/ImagesGe.svelte'
 	import Jorah from './Characters/GoT/Jorah.svelte'
+		import ImagesJor from './CharacterImages/GoT/ImagesJor.svelte'
 	import Robert from './Characters/GoT/Robert.svelte'
+		import ImagesRob from './CharacterImages/GoT/ImagesRob.svelte'
 	import Jaime from './Characters/GoT/Jaime.svelte'
+		import ImagesJai from './CharacterImages/GoT/ImagesJai.svelte'
 	import Catelyn from './Characters/GoT/Catelyn.svelte'
+		import ImagesCa from './CharacterImages/GoT/ImagesCa.svelte'
 	import Robb from './Characters/GoT/Robb.svelte'
+		import ImagesR from './CharacterImages/GoT/ImagesR.svelte'
 	import Cersei from './Characters/GoT/Cersei.svelte'
+		import ImagesCe from './CharacterImages/GoT/ImagesCe.svelte'
 	import Jon from './Characters/GoT/Jon.svelte'
+		import ImagesJo from './CharacterImages/GoT/ImagesJo.svelte'
 	import Joffrey from './Characters/GoT/Joffrey.svelte'
+		import ImagesJof from './CharacterImages/GoT/ImagesJof.svelte'
 	import Sandor from './Characters/GoT/Sandor.svelte'
+		import ImagesSan from './CharacterImages/GoT/ImagesSan.svelte'
 	import Tyrion from './Characters/GoT/Tyrion.svelte'
+		import ImagesTyr from './CharacterImages/GoT/ImagesTyr.svelte'
 	import Petyr from './Characters/GoT/Petyr.svelte'
+		import ImagesPe from './CharacterImages/GoT/ImagesPe.svelte'
 	import Davos from './Characters/Got/Davos.svelte'
+		import ImagesDav from './CharacterImages/GoT/ImagesDav.svelte'
 	import Samwell from './Characters/GoT/Samwell.svelte'
+		import ImagesSam from './CharacterImages/GoT/ImagesSam.svelte'
 	import Brandon from './Characters/GoT/Brandon.svelte'
+		import ImagesBra from './CharacterImages/GoT/ImagesBra.svelte'
 	import Stannis from './Characters/GoT/Stannis.svelte'
+		import ImagesSt from './CharacterImages/GoT/ImagesSt.svelte'
 	import Viserys from './Characters/GoT/Viserys.svelte'
+		import ImagesVi from './CharacterImages/GoT/ImagesVi.svelte'
 	import Khal from './Characters/GoT/Khal.svelte'
+		import ImagesKh from './CharacterImages/GoT/ImagesKh.svelte'
 		//Star Wars Components
 	import Yoda from './Characters/SW/Yoda.svelte';
-		import ImagesY from './CharacterImages/GoT/ImagesY.svelte';
+		import ImagesY from './CharacterImages/SW/ImagesY.svelte';
 		//One Punch Man Components
 	import OnePunch from './Characters/OPM/OnePunch.svelte';
-		import ImagesO from './CharacterImages/GoT/ImagesO.svelte';
+		import ImagesO from './CharacterImages/OPM/ImagesO.svelte';
 		//JoJos Components
 	
 		let searchq = '';
@@ -143,62 +171,62 @@
 		<ImagesRi/>
 		{:else if searchq === 'Melisandre' || searchq === 'melisandre'|| searchq === 'Melisandre The Red Woman'|| searchq === 'melisandre the red woman'}
 		<ImagesMel/>
-		<!-- {:else if searchq === 'Jeor' || searchq === 'jeor'|| searchq === 'jeor mormont'|| searchq === 'Jeor Mormont'}
-
+		{:else if searchq === 'Jeor' || searchq === 'jeor'|| searchq === 'jeor mormont'|| searchq === 'Jeor Mormont'}
+		<ImagesJe/>
 		{:else if searchq === 'Bronn' || searchq === 'bronn'|| searchq === 'Lord Bronn'|| searchq === 'lord bronn'}
-
+		<ImagesBro/>
 		{:else if searchq === 'Theon Greyjoy' || searchq === 'theon greyjoy'|| searchq === 'theon'|| searchq === 'Theon'}
-
+		<ImagesTh/>
 		{:else if searchq === 'Varys' || searchq === 'varys'}
-
+		<ImagesVa/>
 		{:else if searchq === 'Shae' || searchq === 'shae'}
-
+		<ImagesSh/>
 		{:else if searchq === 'Pycelle' || searchq === 'pycelle'}
-
+		<ImagesPy/>
 		{:else if searchq === 'Margaery' || searchq === 'margaery'||searchq === 'Margaery Tyrell'|| searchq === 'margaery tyrell'}
-
+		<ImagesMar/>
 		{:else if searchq === 'Tywin' || searchq === 'tywin'||searchq === 'Tywin Lannister'|| searchq === 'tywin lannister'}
-
+		<ImagesTy/>
 		{:else if searchq === 'Talisa' || searchq === 'talisa'||searchq === 'Talisa Stark'|| searchq === 'talisa stark'}
-
+		<ImagesTa/>
 		{:else if searchq === 'Ygritte' || searchq === 'ygritte'}
-
+		<ImagesYg/>
 		{:else if searchq === 'Gendry Baratheon' || searchq === 'gendry baratheon'||searchq === 'gendry'|| searchq === 'Gendry'}
-
+		<ImagesGe/>
 		{:else if searchq === 'Jorah Mormont' || searchq === 'jorah mormont'||searchq === 'Jorah'|| searchq === 'jorah'}
-
+		<ImagesJor/>
 		{:else if searchq === 'Robert Baratheon' || searchq === 'robert baratheon'|| searchq === 'Robert'|| searchq === 'robert'}
-
+		<ImagesRob/>
 		{:else if searchq === 'jaime' || searchq === 'Jaime'||searchq === 'Jaime Lannister'||searchq === 'jaime lannister'}
-
+		<ImagesJai/>
 		{:else if searchq === 'Catelyn' || searchq === 'catelyn'||searchq === 'Catelyn Stark'||searchq === 'catelyn stark'}
-
+		<ImagesCa/>
 		{:else if searchq === 'Robb' || searchq === 'robb'|| searchq === 'Robb Stark'|| searchq === 'robb stark'}
-
+		<ImagesR/>
 		{:else if searchq === 'Cersei Lannister' || searchq === 'cersei lannister'|| searchq === 'Cersei'|| searchq === 'cersei'}
-
+		<ImagesCe/>
 		{:else if searchq === 'Jon Snow' || searchq === 'jon snow'|| searchq === 'Jon'|| searchq === 'jon'}
-
+		<ImagesJo/>
 		{:else if searchq === 'joffrey baratheon' || searchq === 'Joffrey Baratheon'|| searchq === 'joffrey'|| searchq === 'Joffrey'}
-
+		<ImagesJof/>
 		{:else if searchq === 'Sandor' || searchq === 'sandor'|| searchq === 'Sandor Clegane'|| searchq === 'sandor clegane'}
-
+		<ImagesSan/>
 		{:else if searchq === 'Tyrion' || searchq === 'tyrion'|| searchq === 'Tyrion Lannister'|| searchq === 'tyrion lannister'}
-
+		<ImagesTyr/>
 		{:else if searchq === 'Petyr Baelish' || searchq === 'petyr baelish'|| searchq === 'Petyr'|| searchq === 'petyr'}
-
+		<ImagesPe/>
 		{:else if searchq === 'Davos' || searchq === 'davos'|| searchq === 'Davos Seaworth'|| searchq === 'davos seaworth'}
-
+		<ImagesDav/>
 		{:else if searchq === 'samwell' || searchq === 'Samwell'|| searchq === 'Samwell Tarly'|| searchq === 'samwell tarly'}
-
+		<ImagesSam/>
 		{:else if searchq === 'Brandon' || searchq === 'brandon'|| searchq === 'Brandon Stark'|| searchq === 'brandon stark'}
-
+		<ImagesBra/>
 		{:else if searchq === 'Stannis' || searchq === 'stannis'|| searchq === 'Stannis Baratheon'|| searchq === 'stannis baratheon'}
-
+		<ImagesSt/>
 		{:else if searchq === 'Viserys Targaryn' || searchq === 'viserys targaryn'|| searchq === 'Viserys'|| searchq === 'viserys'}
-
-		{:else if searchq === 'Khal' || searchq === 'khal'|| searchq === 'Khal Drogo'|| searchq === 'khal drogo'} -->
-
+		<ImagesVi/>
+		{:else if searchq === 'Khal' || searchq === 'khal'|| searchq === 'Khal Drogo'|| searchq === 'khal drogo'}
+		<ImagesKh/>
 		{:else if searchq === 'Yoda' || searchq === 'Minch' || searchq === 'Minch Yoda'|| searchq === 'yoda'||searchq === 'mich'||searchq === 'minch yoda'}
 		<ImagesY/>
 		{:else if searchq === 'One Punch Man' || searchq === 'Saitama' || searchq === 'Caped Baldy'|| searchq === 'saitama'||searchq === 'one punch man'|| searchq === 'caped baldy'}
