@@ -1,5 +1,5 @@
 <script>
-    export let images = 'build/images/tommen.jpg'
+    export let images = 'build/images/melisandre.jpeg'
 </script>
 
 <img id="image" class= "iamge" src={images} alt="">

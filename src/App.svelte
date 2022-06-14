@@ -1,30 +1,53 @@
 <script>
-		//Game of Thones Components
+		//----------Game of Thones Components-------------------->>>>>>>>>
 	import Khaleesi from './Characters/GoT/Khaleesi.svelte';
-		import ImagesK from './CharacterImages/ImagesK.svelte';
+		import ImagesK from './CharacterImages/GoT/ImagesK.svelte';
 	import Eddard from './Characters/GoT/Eddard.svelte'
+		import ImagesNed from './CharacterImages/GoT/ImagesNed.svelte'
 	import Arya from './Characters/GoT/Arya.svelte'
+		import ImagesAr from './CharacterImages/GoT/ImagesAr.svelte'
 	import Sansa from './Characters/GoT/Sansa.svelte'
+		import ImagesSa from './CharacterImages/GoT/ImagesSa.svelte'
 	import Brienne from './Characters/GoT/Brienne.svelte'
+		import ImagesBr from './CharacterImages/GoT/ImagesBr.svelte';
 	import Oberyn from './Characters/GoT/Oberyn.svelte'
+		import ImagesOb from './CharacterImages/GoT/ImagesOb.svelte'
 	import Ramsey from './Characters/GoT/Ramsey.svelte'
+		import ImagesRa from './CharacterImages/GoT/ImagesRa.svelte'
 	import Gilly from './Characters/GoT/Gilly.svelte'
+		import ImagesGi from './CharacterImages/GoT/ImagesGi.svelte'
 	import Daario from './Characters/GoT/Daario.svelte'
+		import ImagesDa from './CharacterImages/GoT/ImagesDa.svelte'
 	import Missandei from './Characters/GoT/Missandei.svelte'
+		import ImagesMi from './CharacterImages/GoT/ImagesMi.svelte'
 	import Ellaria from './Characters/GoT/Ellaria.svelte'
+		import ImagesEl from './CharacterImages/GoT/ImagesEl.svelte'
 	import Euron from './Characters/GoT/Euron.svelte'
+		import ImagesEu from './CharacterImages/GoT/ImagesEu.svelte'
 	import Wylis from './Characters/GoT/Wylis.svelte'
+		import ImagesWy from './CharacterImages/GoT/ImagesWy.svelte'
 	import Tommen from './Characters/GoT/Tommen.svelte'
+		import ImagesTo from './CharacterImages/GoT/ImagesTo.svelte'
 	import Jaqen from './Characters/GoT/Jaqen.svelte'
+		import ImagesJa from './CharacterImages/GoT/ImagesJa.svelte'
 	import Roose from './Characters/GoT/Roose.svelte'
+		import ImagesRo from './CharacterImages/GoT/ImagesRo.svelte'
 	import Sparrow from './Characters/GoT/Sparrow.svelte'
+		import ImagesSp from './CharacterImages/GoT/ImagesSp.svelte'
 	import Grey from './Characters/GoT/Grey.svelte'
+		import ImagesGr from './CharacterImages/GoT/ImagesGr.svelte'
 	import Olenna from './Characters/GoT/Olenna.svelte'
+		import ImagesOl from './CharacterImages/GoT/ImagesOl.svelte'
 	import Qyburn from './Characters/GoT/Qyburn.svelte'
+		import ImagesQy from './CharacterImages/GoT/ImagesQy.svelte'
 	import Tormund from './Characters/GoT/Tormund.svelte'
+		import ImagesTor from './CharacterImages/GoT/ImagesTor.svelte'
 	import Yara from './Characters/GoT/Yara.svelte'
+		import ImagesYa from './CharacterImages/GoT/ImagesYa.svelte'
 	import Rickon from './Characters/GoT/Rickon.svelte'
+		import ImagesRi from './CharacterImages/GoT/ImagesRi.svelte'
 	import Melisandre from './Characters/GoT/Melisandre.svelte'
+		import ImagesMel from './CharacterImages/GoT/ImagesMel.svelte'
 	import Jeor from './Characters/GoT/Jeor.svelte'
 	import Bronn from './Characters/GoT/Bronn.svelte'
 	import Theon from './Characters/GoT/Theon.svelte'
@@ -55,10 +78,10 @@
 	import Khal from './Characters/GoT/Khal.svelte'
 		//Star Wars Components
 	import Yoda from './Characters/SW/Yoda.svelte';
-		import ImagesY from './CharacterImages/ImagesY.svelte';
+		import ImagesY from './CharacterImages/GoT/ImagesY.svelte';
 		//One Punch Man Components
 	import OnePunch from './Characters/OPM/OnePunch.svelte';
-		import ImagesO from './CharacterImages/ImagesO.svelte';
+		import ImagesO from './CharacterImages/GoT/ImagesO.svelte';
 		//JoJos Components
 	
 		let searchq = '';
@@ -75,50 +98,52 @@
 		{#if searchq === 'Khaleesi' || searchq === 'Daenerys' || searchq === 'Daenerys Targaryen'|| searchq === 'khaleesi'|| searchq === 'daenerys' || searchq === 'daenerys targaryen'}
 		<ImagesK/>
 		{:else if searchq === 'Eddard' || searchq === 'Ned' || searchq === 'Eddard Stark'|| searchq === 'ned'|| searchq === 'eddard stark'|| searchq === 'eddard'}
-
+		<ImagesNed/>
 		{:else if searchq === 'Sansa' || searchq === 'sansa' || searchq === 'Sansa Stark'|| searchq === 'sansa stark'}
-
+		<ImagesSa/>
 		{:else if searchq === 'Arya' || searchq === 'arya' || searchq === 'Arya Stark'|| searchq === 'arya stark'}
-
+		<ImagesAr/>
 		{:else if searchq === 'Brienne' || searchq === 'brienne' || searchq === 'Brienne Of Tarth'|| searchq === 'brienne of tarth'}
-
+		<ImagesBr/>
 		{:else if searchq === 'Oberyn' || searchq === 'oberyn' || searchq === 'Oberyn Martell'||searchq === 'oberyn martell'}
-
+		<ImagesOb/>
 		{:else if searchq === 'Ramsey' || searchq === 'ramsey' || searchq === 'Ramsey Bolton'|| searchq === 'ramsey bolton'}
-
+		<ImagesRa/>
 		{:else if searchq === 'Gilly' || searchq === 'gilly'}
-
+		<ImagesGi/>
 		{:else if searchq === 'Daario' || searchq === 'daario' || searchq === 'Daario Naharis'|| searchq === 'daario naharis'}
-
+		<ImagesDa/>
 		{:else if searchq === 'Missandei' || searchq === 'missandei'}
-
+		<ImagesMi/>
 		{:else if searchq === 'Ellaria' || searchq === 'ellaria' || searchq === 'Ellaria Sand'|| searchq === 'ellaria sand'}
-
+		<ImagesEl/>
 		{:else if searchq === 'Euron' || searchq === 'euron' || searchq === 'Euron Greyjoy'|| searchq === 'euron greyjoy'}
-
+		<ImagesEu/>
 		{:else if searchq === 'Wylis' || searchq === 'wylis' || searchq === 'Wylis Hodor'|| searchq === 'wylis hodor'}
-
+		<ImagesWy/>
 		{:else if searchq === 'Tommen' || searchq === 'tommen' || searchq === 'Tommen Baratheon'|| searchq === 'tommen baratheon'}
-
+		<ImagesTo/>
+		{:else if searchq === 'Grey' || searchq === 'grey' || searchq === 'Grey Worm'|| searchq === 'grey worm'}
+		<ImagesGr/>
 		{:else if searchq === 'Jaqen' || searchq === 'jaqen' || searchq === 'Jaqen H\'ghar'|| searchq === 'jaqen h\'ghar'}
-
+		<ImagesJa/>
 		{:else if searchq === 'Roose' || searchq === 'roose' || searchq === 'Roose Bolton'|| searchq === 'roose bolton'}
-
+		<ImagesRo/>
 		{:else if searchq === 'sparrow' || searchq === 'Sparrow'|| searchq === 'The High Sparrow'|| searchq === 'the higher sparrow'|| searchq === 'the high'||searchq === 'The High'}
-
+		<ImagesSp/>
 		{:else if searchq === 'Olenna Tyrell' || searchq === 'olenna tyrell'|| searchq === 'olenna'|| searchq === 'Olenna'}
-
+		<ImagesOl/>
 		{:else if searchq === 'Qyburn' || searchq === 'qyburn'|| searchq === 'Qyburn Grand Maester'|| searchq === 'qyburn grand maester'}
-
+		<ImagesQy/>
 		{:else if searchq === 'Tormund Giantsbane' || searchq === 'tormund giantsbane'|| searchq === 'Tormund'|| searchq === 'tormund'}
-
+		<ImagesTor/>
 		{:else if searchq === 'Yara' || searchq === 'yara'|| searchq === 'Yara Greyjoy'|| searchq === 'yara greyjoy'}
-
+		<ImagesYa/>
 		{:else if searchq === 'Rickon Stark' || searchq === 'rickon stark'|| searchq === 'rickon'|| searchq === 'Rickon'}
-
+		<ImagesRi/>
 		{:else if searchq === 'Melisandre' || searchq === 'melisandre'|| searchq === 'Melisandre The Red Woman'|| searchq === 'melisandre the red woman'}
-
-		{:else if searchq === 'Jeor' || searchq === 'jeor'|| searchq === 'jeor mormont'|| searchq === 'Jeor Mormont'}
+		<ImagesMel/>
+		<!-- {:else if searchq === 'Jeor' || searchq === 'jeor'|| searchq === 'jeor mormont'|| searchq === 'Jeor Mormont'}
 
 		{:else if searchq === 'Bronn' || searchq === 'bronn'|| searchq === 'Lord Bronn'|| searchq === 'lord bronn'}
 
@@ -172,7 +197,7 @@
 
 		{:else if searchq === 'Viserys Targaryn' || searchq === 'viserys targaryn'|| searchq === 'Viserys'|| searchq === 'viserys'}
 
-		{:else if searchq === 'Khal' || searchq === 'khal'|| searchq === 'Khal Drogo'|| searchq === 'khal drogo'}
+		{:else if searchq === 'Khal' || searchq === 'khal'|| searchq === 'Khal Drogo'|| searchq === 'khal drogo'} -->
 
 		{:else if searchq === 'Yoda' || searchq === 'Minch' || searchq === 'Minch Yoda'|| searchq === 'yoda'||searchq === 'mich'||searchq === 'minch yoda'}
 		<ImagesY/>
