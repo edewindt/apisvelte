@@ -1,8 +1,7 @@
 <script>
-    export let images = 'build/images/khal.jpg'
+    export let images = {khaleesi:'build/images/khal.jpg', sad:0};
 </script>
-
-<img id="image" class= "iamge" src={images} alt="">
+<img id="image" class= "iamge" src={images['khaleesi']} alt="">
 <style>
     .iamge{
 		height: 450px;
