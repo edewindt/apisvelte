@@ -9,5 +9,6 @@
 		width: 450px;
 		background-color: black;
 		border-radius: 1rem;
+		object-fit: cover;
     }
 </style>
