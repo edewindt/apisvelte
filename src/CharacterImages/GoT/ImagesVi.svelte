@@ -1,5 +1,5 @@
 <script>
-    export let images = 'build/images/arya-stark.jpg'
+    export let images = 'build/images/viserys-targaryan.jpg'
 </script>
 
 <img id="image" class= "iamge" src={images} alt="">
@@ -9,6 +9,6 @@
 		width: 450px;
 		background-color: black;
 		border-radius: 1rem;
-		object-fit: cover;
+        object-fit: cover;
     }
 </style>

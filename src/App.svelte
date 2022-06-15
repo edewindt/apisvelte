@@ -104,13 +104,13 @@
 		import ImagesVi from './CharacterImages/GoT/ImagesVi.svelte'
 	import Khal from './Characters/GoT/Khal.svelte'
 		import ImagesKh from './CharacterImages/GoT/ImagesKh.svelte'
-		//Star Wars Components
+		//----------Star Wars Components-------------------->>>>>>>>>
 	import Yoda from './Characters/SW/Yoda.svelte';
 		import ImagesY from './CharacterImages/SW/ImagesY.svelte';
-		//One Punch Man Components
+		//----------One Punch Man Components-------------------->>>>>>>>>
 	import OnePunch from './Characters/OPM/OnePunch.svelte';
 		import ImagesO from './CharacterImages/OPM/ImagesO.svelte';
-		//JoJos Components
+		//----------JoJos Components-------------------->>>>>>>>>
 	
 		let searchq = '';
 </script>
@@ -123,6 +123,7 @@
 	</div>
 	<div class="display-wrapper">
 	<div class="iamge">
+		<!---------------Game Of Thrones If Statements--------------------->
 		{#if searchq === 'Khaleesi' || searchq === 'Daenerys' || searchq === 'Daenerys Targaryen'|| searchq === 'khaleesi'|| searchq === 'daenerys' || searchq === 'daenerys targaryen'}
 		<ImagesK/>
 		{:else if searchq === 'Eddard' || searchq === 'Ned' || searchq === 'Eddard Stark'|| searchq === 'ned'|| searchq === 'eddard stark'|| searchq === 'eddard'}
@@ -217,7 +218,7 @@
 		<ImagesPe/>
 		{:else if searchq === 'Davos' || searchq === 'davos'|| searchq === 'Davos Seaworth'|| searchq === 'davos seaworth'}
 		<ImagesDav/>
-		{:else if searchq === 'samwell' || searchq === 'Samwell'|| searchq === 'Samwell Tarly'|| searchq === 'samwell tarly'}
+		{:else if searchq === 'samwell' || searchq === 'Samwell'|| searchq === 'Samwell Tarly'|| searchq === 'samwell tarly' || searchq === 'sam' || searchq === 'Sam'}
 		<ImagesSam/>
 		{:else if searchq === 'Brandon' || searchq === 'brandon'|| searchq === 'Brandon Stark'|| searchq === 'brandon stark'}
 		<ImagesBra/>
@@ -227,14 +228,17 @@
 		<ImagesVi/>
 		{:else if searchq === 'Khal' || searchq === 'khal'|| searchq === 'Khal Drogo'|| searchq === 'khal drogo'}
 		<ImagesKh/>
+		<!---------------Starwars If Statements--------------------->
 		{:else if searchq === 'Yoda' || searchq === 'Minch' || searchq === 'Minch Yoda'|| searchq === 'yoda'||searchq === 'mich'||searchq === 'minch yoda'}
 		<ImagesY/>
+		<!---------------One Punch Man If Statements--------------------->
 		{:else if searchq === 'One Punch Man' || searchq === 'Saitama' || searchq === 'Caped Baldy'|| searchq === 'saitama'||searchq === 'one punch man'|| searchq === 'caped baldy'}
 		<ImagesO/>
 		{/if}
 		</div>
 	<div class="display">
 	<div>
+		<!---------------Game Of Thrones If Statements--------------------->
 		{#if searchq === 'Khaleesi' || searchq === 'Daenerys' || searchq === 'Daenerys Targaryen'|| searchq === 'khaleesi'|| searchq === 'daenerys' || searchq === 'daenerys targaryen'}
 		<Khaleesi/>
 		{:else if searchq === 'Eddard' || searchq === 'Ned' || searchq === 'Eddard Stark'|| searchq === 'ned'|| searchq === 'eddard stark'|| searchq === 'eddard'}
@@ -329,7 +333,7 @@
 		<Petyr/>
 		{:else if searchq === 'Davos' || searchq === 'davos'|| searchq === 'Davos Seaworth'|| searchq === 'davos seaworth'}
 		<Davos/>
-		{:else if searchq === 'samwell' || searchq === 'Samwell'|| searchq === 'Samwell Tarly'|| searchq === 'samwell tarly'}
+		{:else if searchq === 'samwell' || searchq === 'Samwell'|| searchq === 'Samwell Tarly'|| searchq === 'samwell tarly' || searchq === 'sam' || searchq === 'Sam'}
 		<Samwell/>
 		{:else if searchq === 'Brandon' || searchq === 'brandon'|| searchq === 'Brandon Stark'|| searchq === 'brandon stark'}
 		<Brandon/>
@@ -339,8 +343,10 @@
 		<Viserys/>
 		{:else if searchq === 'Khal' || searchq === 'khal'|| searchq === 'Khal Drogo'|| searchq === 'khal drogo'}
 		<Khal/>
+		<!---------------Starwars If Statements--------------------->
 		{:else if searchq === 'Yoda' || searchq === 'Minch' || searchq === 'Minch Yoda'|| searchq === 'yoda'||searchq === 'mich'||searchq === 'minch yoda'}
 		<Yoda/>
+		<!---------------One Punch Man If Statements--------------------->
 		{:else if searchq === 'One Punch Man' || searchq === 'Saitama' || searchq === 'Caped Baldy'|| searchq === 'saitama'||searchq === 'one punch man'|| searchq === 'caped baldy'}
 		<OnePunch/>
 		{:else}
@@ -351,7 +357,7 @@
 		{/if}
 	<button class="butt">Generate Quote</button><div class="text"></div><textarea cols="30" rows="5" value="" readonly></textarea></div>
 </div>
-</div>
+
 </main>
 <style>
 	main{
@@ -361,6 +367,7 @@
 		font-size: 2rem;
 		margin-bottom: 1rem;
 	}
+
 	.butt{
 		width: 20rem;
 		border-radius: 1rem;
